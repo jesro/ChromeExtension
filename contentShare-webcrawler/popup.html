@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+<div id="read"></div>
+<hr>
+<textarea id="red" rows="30" cols="100" readonly>
+	
+</textarea>
+<button onclick="myFunction()">Copy</button>
+<script>
+	function myFunction() {
+	  document.getElementById("red").value ="ll";
+	  document.execCommand("copy");
+	}	
+</script>
+</body>
+</html>
+

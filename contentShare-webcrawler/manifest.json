@@ -1,0 +1,35 @@
+{
+  "name": "Jesro Content",
+  "version": "1.0",
+  "description": "This extension scrape webpage!",
+  "icons": {
+    "16": "images/jes16.png",
+    "32": "images/jes32.png",
+    "64": "images/jes64.png",
+    "128": "images/jes128.png"
+  },
+"permissions": [
+    "activeTab",
+	"storage",
+	"clipboardRead",
+	"clipboardWrite"
+],
+  "manifest_version": 2,
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://*"]
+  },
+  {
+	"js": ["content1.js"],
+    "matches": ["https://*"]
+  }],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/jes16.png",
+      "32": "images/jes32.png",
+      "64": "images/jes64.png",
+      "128": "images/jes128.png"
+    }
+  }
+}
